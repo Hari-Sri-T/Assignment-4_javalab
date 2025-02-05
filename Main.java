@@ -8,7 +8,10 @@ class Main{
 		mydeck.createDeck();
 		System.out.println("__________________Print Deck_________________________");
 		mydeck.displayDeck();
-		
+		System.out.println("__________________Shuffled Deck_________________________");
+		mydeck.shuffleDeck();
+		System.out.println("\nRandomly Drawn 2 Cards are: ");
+		mydeck.randomCards();
+		mydeck.distributeCards();
 	}
-	
 }
