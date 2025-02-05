@@ -10,6 +10,6 @@ class Card{
 	}
 	
 	public String toString(){ // we are using a default method toString 
-		return rank+" of "+suit;
-	
+		return rank+" of "+suit;	
+	}
 }
