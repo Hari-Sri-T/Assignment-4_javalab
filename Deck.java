@@ -39,6 +39,15 @@ class Deck{
 		System.out.println("Cards doesn't belong to same suits");
 	}
 	
+	public void compareCard( Card card1, Card card2) //Card which is from same suit
+	{
+		if ( card1.rank == card2.rank ){
+			System.out.println("Cards are of same rank");
+			return;
+		}
+		System.out.println("Cards doesn't have same rank");
+	}
+	
 	public void shuffleDeck(){ // method to suffle card
 		Collections.shuffle(deck);
 	}
