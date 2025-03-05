@@ -32,7 +32,8 @@ class Deck{
 	
 	public void sameCard( Card card1, Card card2) //Card which is from same suit
 	{
-		if ( card1.suit == card2.suit ){
+		if (card1.suit.equalsIgnoreCase(card2.suit)) 
+		{
 			System.out.println("Cards are of same suits");
 			return;
 		}
@@ -54,6 +55,7 @@ class Deck{
 	
 	//
 	public void randomCards(){ // method to select 2 random cards from deck
+		shuffleDeck();
 		Card card1 = deck.get(0);         
         Card card2 = deck.get(1); 
 		System.out.println(card1);
@@ -76,12 +78,9 @@ class Deck{
 	
 	//Method to distribute 5 cards at random to 3 players
 	public void dealCards(){
-		ArrayList<Card> player1;
-		ArrayList<Card> player2;
-		ArrayList<Card> player3;
-		player1 = new ArrayList<>();
-		player2 = new ArrayList<>();
-		player3 = new ArrayList<>();
+		ArrayList<Card> player1 = new ArrayList<>();
+		ArrayList<Card> player2 = new ArrayList<>();
+		ArrayList<Card> player3 = new ArrayList<>();
 		
 
 		for (int i = 0; i < 5 ; i++){ // giving first 5 cards to player 1
