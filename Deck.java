@@ -19,13 +19,13 @@ class Deck{
 		}				
 	}
 	
-	public void displayDeck(){
-		for (Card card : deck){
+	public void displayDeck(){ // method to display the deck
+		for (Card card : deck){ // for loop to iterate over ArrayList
 			System.out.println(card);
 		}		
 	}
 	
-	public void displayCard( Card card1 ){
+	public void displayCard( Card card1 ){ // method to display the card
 		System.out.println("\n");
 		System.out.println(card1);	
 	}
@@ -69,10 +69,10 @@ class Deck{
 		System.out.println(card5);
 	}
 	
-	public void findCard(String rank, String suit)
+	public void findCard(String rank, String suit) // method to find the card position
 	{
 		int position = 0;
-		for (Card card : deck){
+		for (Card card : deck){ // iterates over deck to find the card
 			if (card.rank.equalsIgnoreCase(rank) && card.suit.equalsIgnoreCase(suit))
 {
 				System.out.println("Found Card in Deck!!!\n\n"+ "Its the"+position+"th card");

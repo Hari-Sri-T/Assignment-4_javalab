@@ -1,10 +1,10 @@
 //Card.java
 
-class Card{
+class Card{ 
 	String rank;
 	String suit;
 	
-	public Card(String rank, String suit){
+	public Card(String rank, String suit){  // constructor
 		this.rank = rank;
 		this.suit = suit;
 	}
