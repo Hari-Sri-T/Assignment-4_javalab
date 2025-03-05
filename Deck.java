@@ -30,6 +30,15 @@ class Deck{
 		System.out.println(card1);	
 	}
 	
+	public void sameCard( Card card1, Card card2) //Card which is from same suit
+	{
+		if ( card1.suit == card2.suit ){
+			System.out.println("Cards are of same suits");
+			return;
+		}
+		System.out.println("Cards doesn't belong to same suits");
+	}
+	
 	public void shuffleDeck(){ // method to suffle card
 		Collections.shuffle(deck);
 	}

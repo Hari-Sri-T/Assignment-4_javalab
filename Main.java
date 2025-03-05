@@ -19,5 +19,9 @@ class Main{
 		
 		Card card1 = new Card("3","Spades");
 		mydeck.displayCard(card1);
+		
+		Card card2 = new Card("A","Hearts");
+		
+		mydeck.sameCard(card1,card2);
 	}
 }
