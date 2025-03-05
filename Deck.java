@@ -54,12 +54,19 @@ class Deck{
 	}
 	
 	//
-	public void randomCards(){ // method to select 2 random cards from deck
+	public void randomCards(){ // method to select 5 random cards from deck
 		shuffleDeck();
 		Card card1 = deck.get(0);         
         Card card2 = deck.get(1); 
+		Card card3 = deck.get(2);         
+        Card card4 = deck.get(3); 
+		Card card5 = deck.get(4);         
+        
 		System.out.println(card1);
 		System.out.println(card2);
+		System.out.println(card3);
+		System.out.println(card4);
+		System.out.println(card5);
 	}
 	
 	public void findCard(String rank, String suit)
