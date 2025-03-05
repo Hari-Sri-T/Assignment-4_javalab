@@ -41,7 +41,7 @@ class Deck{
 	
 	public void compareCard( Card card1, Card card2) //Card which is from same suit
 	{
-		if ( card1.rank == card2.rank ){
+		if ( card1.rank.equalsIgnoreCase(card2.rank) ){
 			System.out.println("Cards are of same rank");
 			return;
 		}
@@ -60,9 +60,22 @@ class Deck{
 		System.out.println(card2);
 	}
 	
+	public void findCard(String rank, String suit)
+	{
+		int position = 0;
+		for (Card card : deck){
+			if (card.rank.equalsIgnoreCase(rank) && card.suit.equalsIgnoreCase(suit))
+{
+				System.out.println("Found Card in Deck!!!\n\n"+ "Its the"+position+"th card");
+				return;
+			}
+			position++;	
+		}
+    }		
+	
 	
 	//Method to distribute 5 cards at random to 3 players
-	public void distributeCards(){
+	public void dealCards(){
 		ArrayList<Card> player1;
 		ArrayList<Card> player2;
 		ArrayList<Card> player3;
