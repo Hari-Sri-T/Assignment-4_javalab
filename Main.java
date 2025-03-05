@@ -1,4 +1,7 @@
 // Main.java
+// Name: Tanniru Hari Sri Shanmukha Sai
+// PRN: 23070126135
+// Batch: AIML B3
 
 class Main{
 	public static void main(String args[]){
@@ -13,5 +16,8 @@ class Main{
 		System.out.println("\nRandomly Drawn 2 Cards are: ");
 		mydeck.randomCards();
 		mydeck.distributeCards();
+		
+		Card card1 = new Card("3","Spades");
+		mydeck.displayCard(card1);
 	}
 }

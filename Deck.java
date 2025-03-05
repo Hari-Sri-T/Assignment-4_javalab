@@ -22,8 +22,12 @@ class Deck{
 	public void displayDeck(){
 		for (Card card : deck){
 			System.out.println(card);
-		}
-			
+		}		
+	}
+	
+	public void displayCard( Card card1 ){
+		System.out.println("\n");
+		System.out.println(card1);	
 	}
 	
 	public void shuffleDeck(){ // method to suffle card
